@@ -1,0 +1,23 @@
+﻿@model ControlGastos.Models.Gasto
+
+<div class="container mt-5">
+    <h2>Editar gasto</h2>
+
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <input asp-for="Descripcion" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <input asp-for="Monto" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <input asp-for="Categoria" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
